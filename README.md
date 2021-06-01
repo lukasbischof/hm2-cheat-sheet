@@ -4,6 +4,7 @@
 
 ### Kapitel
 
-| Thema                          | Links |
-| ------------------------------ | ----- |
-| Nichtlineare Gleichungssysteme |       |
+* #### [Nichtlineare Gleichungssysteme](./nichtlineare%20gleichungssysteme)
+* #### [Ausgleichsrechnung](./ausgleichsrechnung)
+* #### [Integration](./integration)
+* #### [Differentialgleichungen](./differentialgleichungen)
