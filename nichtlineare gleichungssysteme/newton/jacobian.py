@@ -9,6 +9,7 @@ if __name__ == '__main__':
         ((x2 - 3) ** 2 - x3 ** 3 + 7)
     ])
 
+    # Berechnung der Jacobi-Matrix für das System f
     Df = f.jacobian(x)
     print(f'Df = {Df}')
 

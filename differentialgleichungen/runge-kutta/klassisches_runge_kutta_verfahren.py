@@ -2,6 +2,17 @@ import numpy as np
 
 
 def classic_runga_kutta(f, a, b, n, y0):
+    """
+    Berechnet die Lösung einer gegebenen Differentialgleichung mit dem Runge-Kutta Verfahren.
+
+    :param f: Die Differentialgleichung in der Form f(x, y)
+    :param a: Der Anfangswert x_0
+    :param b: Der X-Wert für die gesuchte Lösung
+    :param n: Die Anzahl an Schritten, welche durchgeführt werden sollen.
+              Je mehr Schritte, desto kleiner wird die Schrittweite und desto genauer das Resultat
+    :param y0: Der Anfangswert y_0, welcher zusammen mit a den Startpunkt (a, y_0) bildet
+    :return: Die gesuchte Lösung für y(a)
+    """
     y = np.zeros(n + 1, dtype=np.float64)
     y[0] = y0
     h = (b - a) / n

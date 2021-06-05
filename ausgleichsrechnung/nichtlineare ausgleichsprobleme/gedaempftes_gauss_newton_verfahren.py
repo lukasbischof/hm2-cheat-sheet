@@ -14,6 +14,7 @@ def gauss_newton(g, Dg, lam0, tol=1e-5, max_iter=30, pmax=5, damping=True, print
     Bspw.: `sp.Matrix([y[k] - f(x[k], l) for k in range(len(x))])` wobei y die Y-Werte der Stützstellen sind,
     f(x, l) die zu fittende Funktion mit der Liste von 𝞴_n Variablen und x die X-Werte der Stützstellen.
 
+    :param Dg: Die Jacobi-Matrix für g
     :param pmax: Die Maximale Dämpfung. Dabei ist 2 = halbieren, 3 = 2^3, etc.
     :return: Der 𝞴-Vektor sowie die Anzahl benötigter Iterationen.
     """
