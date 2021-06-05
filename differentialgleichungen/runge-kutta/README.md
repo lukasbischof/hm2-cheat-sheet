@@ -42,3 +42,6 @@ Für eine Differentialgleichung k-ter Ordnung:
 
 In gewissen Situationen kann es vorkommen, dass der numerische Fehler unbegrenzt grösser werden kann,
 unabhängig von der Schrittweite `h`. Man spricht dann von einer instabilen Lösung.
+
+![image](https://user-images.githubusercontent.com/8350985/120906625-51b3e600-c65b-11eb-90d3-0f75e0f1bd50.png)
+
