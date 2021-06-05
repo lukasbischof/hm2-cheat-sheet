@@ -12,11 +12,11 @@ Das klassische vierstufige Runge-Kutta Verfahren hat die Konsistenz- und Konverg
 
 Die Koeffizienten notiert man dabei meist in der Form:
 
-![image](https://user-images.githubusercontent.com/8350985/120812420-3f4b8680-c54d-11eb-8af8-596586c43efc.png)
+<img src="https://user-images.githubusercontent.com/8350985/120906656-8e7fdd00-c65b-11eb-836e-8934b4a56462.png" width="50%">
 
 Dabei kann man die Euler-Verfahren und das Mittelpunkt-Verfahren auf folgende Schemata zurückführen:
 
-![image](https://user-images.githubusercontent.com/8350985/120813186-f516d500-c54d-11eb-9ada-d29950555dbb.png)
+![image](https://user-images.githubusercontent.com/8350985/120906652-81fb8480-c65b-11eb-8d22-cd9f88e3b84a.png)
 
 ## Erweiterung auf Systeme von Differentialgleichungen
 
