@@ -9,12 +9,12 @@ Gegeben sind folgende Messungen:
 
 <img src="https://user-images.githubusercontent.com/8350985/123523830-b0063e80-d6c6-11eb-85ad-6e6e9f4bb9be.png" width="45%">
 
-Das ergiebt `n + 1 = 4` Stützpunkte, also ist `n = 3`. 
-Das Interpolationspolynom hat also die Form
+Das ergibt `n + 1 = 4` Stützpunkte, also ist `n = 3`. 
+Das Interpolationspolynom hat also die Form:
 
 <img src="https://user-images.githubusercontent.com/8350985/123523861-f8bdf780-d6c6-11eb-94b7-d8037a983141.png" width="75%">
 
-Die Lagrangepolynome berechnen sich folgendermassen:
+Die Lagrangepolynome berechnen sich folgendermaßen:
 
 ![image](https://user-images.githubusercontent.com/8350985/123523876-18552000-d6c7-11eb-8b39-da647fe94729.png)
 <img src="https://user-images.githubusercontent.com/8350985/123523957-8ac60000-d6c7-11eb-8215-551359826490.png" width="85%">
