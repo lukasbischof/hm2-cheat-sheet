@@ -8,7 +8,7 @@ Das klassische vierstufige Runge-Kutta Verfahren hat die Konsistenz- und Konverg
 
 ## Allgemeines *s*-stufiges Runge-Kutta Verfahren
 
-![image](https://user-images.githubusercontent.com/8350985/120812311-2642d580-c54d-11eb-9ee7-60db9cd1cd24.png)
+<img src="https://user-images.githubusercontent.com/8350985/120812311-2642d580-c54d-11eb-9ee7-60db9cd1cd24.png" width="80%">
 
 Die Koeffizienten notiert man dabei meist in der Form:
 
@@ -19,6 +19,8 @@ Dabei kann man die Euler-Verfahren und das Mittelpunkt-Verfahren auf folgende Sc
 ![image](https://user-images.githubusercontent.com/8350985/120906652-81fb8480-c65b-11eb-8d22-cd9f88e3b84a.png)
 
 ## Erweiterung auf Systeme von Differentialgleichungen
+
+### Zurückführen einer DGL *k*-ter Ordnung auf *k* DGL 1. Ordnung
 
 Durch Umformen können auch Differentialgleichungen höherer Ordnung gelöst werden. Dazu geht man wie folgt vor:
 
@@ -31,12 +33,18 @@ Für eine Differentialgleichung k-ter Ordnung:
 
 #### Beispiel
 
-![image](https://user-images.githubusercontent.com/8350985/120817617-24c7dc00-c552-11eb-81b3-71fefbb251a4.png)
+<img src="https://user-images.githubusercontent.com/8350985/120817617-24c7dc00-c552-11eb-81b3-71fefbb251a4.png" width="80%">
 
-## Lösen eines Systems von *k* Differentialgleichungen 1. Ordnung
+### Lösen eines Systems von *k* Differentialgleichungen 1. Ordnung
 
-![image](https://user-images.githubusercontent.com/8350985/120818013-82f4bf00-c552-11eb-9db5-e291e3a3e9db.png)
-![image](https://user-images.githubusercontent.com/8350985/120818076-8f791780-c552-11eb-8f17-2b7ec346e6a6.png)
+![image](https://user-images.githubusercontent.com/8350985/123560404-2f1c7500-d7a2-11eb-98cf-2372dc5f0c98.png)
+![image](https://user-images.githubusercontent.com/8350985/123560425-4a878000-d7a2-11eb-839b-1bb1db1eccc5.png)
+
+#### Beispiel
+
+Ausgehend vom oberen Beispiel:
+
+![image](https://user-images.githubusercontent.com/8350985/123560530-06e14600-d7a3-11eb-8565-ef6a0585d264.png)
 
 ## Stabilität
 
@@ -45,3 +53,19 @@ unabhängig von der Schrittweite `h`. Man spricht dann von einer instabilen Lös
 
 ![image](https://user-images.githubusercontent.com/8350985/120906625-51b3e600-c65b-11eb-90d3-0f75e0f1bd50.png)
 
+## Python-Funktionen für das Lösen von gewöhnlichen DGL
+
+Das Scipy Paket stellt eine Funktion für das Lösen mittels Runge-Kutta Verfahren bereit:
+
+```python
+from scipy.integrate import solve_ivp
+
+
+def exponential_decay(_t, y):
+    return -0.5 * y
+
+
+range = [0, 10]
+initial_state = [2, 4, 8]
+solution = solve_ivp(exponential_decay, range, initial_state)
+```
