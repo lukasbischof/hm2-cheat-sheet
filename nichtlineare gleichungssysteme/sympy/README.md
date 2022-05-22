@@ -47,11 +47,14 @@ print(Df) # ==> Jacobi-Matrix
 
 Die Jacobi-Matrix hat gemäss Definition folgende Form:
 
-```
-        ⎡df1/dx1 df1/dx2 ... df1/dxn⎤
-Df(x) = |df2/dx1 df2/dx2 ... df2/dxn|
-        ⎣dfm/dx1 dfm/dx2 ... dfm/dxn⎦
-```
+$$
+Df(x)=\begin{bmatrix}
+\frac{df_1}{dx_1}\ \frac{df_1}{dx_2}\ \ldots\ \frac{df_1}{dx_n} \\
+\frac{df_2}{dx_1}\ \frac{df_2}{dx_2}\ \ldots\ \frac{df_2}{dx_n} \\
+\vdots \\
+\frac{df_m}{dx_1}\ \frac{df_m}{dx_2}\ \ldots\ \frac{df_m}{dx_n}
+\end{bmatrix}
+$$
 
 Danach können Variabeln substituiert werden:
 ```python
