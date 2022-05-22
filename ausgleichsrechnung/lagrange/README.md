@@ -9,7 +9,7 @@ Gegeben sind folgende Messungen:
 
 <img src="https://user-images.githubusercontent.com/8350985/123523830-b0063e80-d6c6-11eb-85ad-6e6e9f4bb9be.png" width="45%">
 
-Das ergibt `n + 1 = 4` Stützpunkte, also ist `n = 3`. 
+Das ergibt $n + 1 = 4$ Stützpunkte, also ist $n = 3$. 
 Das Interpolationspolynom hat also die Form:
 
 <img src="https://user-images.githubusercontent.com/8350985/123523861-f8bdf780-d6c6-11eb-94b7-d8037a983141.png" width="75%">
